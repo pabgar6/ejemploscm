@@ -1,0 +1,60 @@
+body{
+font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+background-color:lightskyblue;
+}
+#container{
+margin:0 auto;
+width:100%;
+}
+#header {
+background-color:blue;
+color:white;
+padding:10px;
+}
+#menu{
+float:left;
+width:100%;
+background-color:cadetblue;
+}
+#menu ul li{
+list-style-type:none;
+display:inline;
+}
+#menu li a{
+display:block;
+text-decoration:none;
+border-right:2px solid #ffffff;
+padding: 3px 10px;
+float: left;
+color:#ffffff;
+}
+#menu li a:hover{
+background-color:steelblue;
+}
+#mainContainer{
+float:left;
+width:100%;
+}
+#content{
+clear:left;
+float:left;
+width:65%;
+padding: 20px 0;
+margin: 0 0 0 5%;
+display: inline;
+}
+#sidebar {
+float:right;
+width:30%;
+padding: 20px 0;
+margin: 0;
+display: inline;
+background-color:lightcyan;
+}
+#footer {
+clear:left;
+background-color:lightcyan;
+text-align:center;
+padding: 20px 0;
+height:1%;
+}
