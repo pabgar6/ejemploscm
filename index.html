@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<title>Página de prueba de la asignatura doble columna, encabezado y pie</title>
+<link href="estilo1.css" rel="stylesheet" type="text/css" id="estilo">
+</head>
+<body onLoad="Bienvenido();">
+<!—referencia al archivo javascript que vamos a usar-->
+<script src="javascript.js"></script>
+<script type="text/javascript">
+window.setInterval (BlinkIt, 500);
+var color = "red";
+function BlinkIt () {
+var blink = document.getElementById ("blink");
+color = (color == "#ffffff")? "red" : "#ffffff";
+blink.style.color = color;
+blink.style.fontSize='36px';}
+</script>
+<div id="blink" onclick="parent.location='http://scm-cum.blogspot.com.es/'">
+Click Me!</div>
+Selecciona algo del texto: <input type="text" value="Hola clase!"
+onselect="myFunction2()">
+<p id="nombre">Bienvenido</p>
+<button type="button" onclick="cambiarArchivoCss('estilo3.css')">Cambio a
+estilo3</button>
+<button type="button" onclick="cambiarArchivoCss('estilo1.css')">Cambio a
+estilo1</button>
+<button type="button" onclick="cambiarArchivoCss('estilo2.css')">Cambio a
+estilo2</button>
+<button type="button" onclick="myFunctiondemo()">Pulsame cambio
+header</button>
+<button type="button" onclick="myFunctionalert()">Pulsame alert!</button>
+<button type="button" onclick="myFunctiondemo1()">Pulsame otro cambio
+header</button>
+<div id="demo">
+ <div id="container">
+ <div id ="header">
+ <h1>Sitio web de Pablo (SCM)</h1>
+ </div> <!--fin de header-->
+ <div id="menu">
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">Servicios</a></li>
+ <li><a href="#">Sobre mi</a></li>
+ <li><a href="#">Contacto</a></li>
+ <li><a href="http://scm-cum.blogspot.com.es">Mi Blog</a></li>
+ </ul>
+ </div> <!-- fin de menu-->
+ <div id="mainContainer">
+ <div id ="content">
+ <h2>Práctica de JavaScript</h2>
+ <p>En esta práctica hemos aprendido a utilizar JavaScript en conjunto con HTML Y CSS</p>
+ <h2>Información de contacto</h2>
+ <p>pgarciaef@alumnos.unex.es</p>
+ </div> <!--fin del content-->
+ <div id="sidebar">
+ <h3>Menu</h3>
+ <ul>
+ <li>Menu opcion 1</li>
+ <li>Menu opcion 2</li>
+ <li>Menu opcion 3</li>
+ </ul>
+ </div> <!-- fin de sidebar-->
+ <div id="footer">
+ <p> Sistemas de comunicación Multimedia</p>
+ </div> <!-- fin de footer-->
+ <!-- fin de container-->
+</div>
+</body>
+</html>
